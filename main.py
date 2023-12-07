@@ -1,6 +1,7 @@
 import day1_1 as d1a
 import day1_2 as d1b
 import day2_1 as d2a
+import day2_2 as d2b
 
 
 def read_file(filename):
@@ -22,4 +23,4 @@ if __name__ == "__main__":
     print("Input:")
     print(file)
     print("\nOutput:")
-    print(d2a.parse_input(file))
+    print(d2b.parse_input(file))

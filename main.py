@@ -2,7 +2,7 @@ import day1_1 as d1a
 import day1_2 as d1b
 import day2_1 as d2a
 import day2_2 as d2b
-
+import day3_1 as d3a
 
 def read_file(filename):
     with open(filename) as f:
@@ -23,4 +23,6 @@ if __name__ == "__main__":
     print("Input:")
     print(file)
     print("\nOutput:")
-    print(d2b.parse_input(file))
+    touching_numbers = d3a.euclidean_distance(d3a.create_matrix(file))
+    print(touching_numbers)
+    print(f"Sum of numbers: {d3a.sum_of_numbers(touching_numbers)}")

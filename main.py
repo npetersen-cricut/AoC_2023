@@ -23,6 +23,6 @@ if __name__ == "__main__":
     print("Input:")
     print(file)
     print("\nOutput:")
-    touching_numbers = d3a.euclidean_distance(d3a.create_matrix(file))
+    touching_numbers = d3a.check_distance(d3a.create_matrix(file))
     print(touching_numbers)
     print(f"Sum of numbers: {d3a.sum_of_numbers(touching_numbers)}")

@@ -3,6 +3,8 @@ import day1_2 as d1b
 import day2_1 as d2a
 import day2_2 as d2b
 import day3_1 as d3a
+import day3_2 as d3b
+import day4_1 as d4a
 
 def read_file(filename):
     with open(filename) as f:
@@ -17,12 +19,18 @@ def append_to_file(filename, data):
         f.write(data)
 
 
+# Day 3 Part 2
+# if __name__ == "__main__":
+#     file = read_file("input.txt")
+#     print("Input:")
+#     print(file)
+#     print("\nOutput:")
+#     touching_numbers = d3b.find_gear_ratios(d3b.create_matrix(file))
+#     print(touching_numbers)
 
 if __name__ == "__main__":
     file = read_file("input.txt")
     print("Input:")
     print(file)
     print("\nOutput:")
-    touching_numbers = d3a.check_distance(d3a.create_matrix(file))
-    print(touching_numbers)
-    print(f"Sum of numbers: {d3a.sum_of_numbers(touching_numbers)}")
+    d4a.parse_input(file)

@@ -10,6 +10,7 @@ import day6_1 as d6a
 import day6_2 as d6b
 import day7_1 as d7a
 import day7_2 as d7b
+import day8_1 as d8a
 
 def read_file(filename):
     with open(filename) as f:
@@ -35,7 +36,7 @@ def append_to_file(filename, data):
 
 if __name__ == "__main__":
     file = read_file("input.txt")
-    print("Input:")
-    print(file)
+    # print("Input:")
+    # print(file)
     print("\nOutput:")
-    d7b.parse_input(file)
+    d8a.main(file)

@@ -9,6 +9,7 @@ import day4_2 as d4b
 import day6_1 as d6a
 import day6_2 as d6b
 import day7_1 as d7a
+import day7_2 as d7b
 
 def read_file(filename):
     with open(filename) as f:
@@ -37,4 +38,4 @@ if __name__ == "__main__":
     print("Input:")
     print(file)
     print("\nOutput:")
-    d7a.parse_input(file)
+    d7b.parse_input(file)
